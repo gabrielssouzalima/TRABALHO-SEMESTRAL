@@ -1,16 +1,13 @@
 import tkinter as tk
 import random
 
-
 def escolher_palavra():
-    palavras = ["desenvolvimento", "algoritmo",
-                "logica", "eniac", "etec", "github", "python"]
+    palavras = ["MITS", "altair", "programacao", "etec", "tecnologia",
+                "computador", "Ridley", "Microsoft", "Apple", "informatica"]
     return random.choice(palavras).upper()
-
 
 def atualizar_palavra():
     palavra_label.config(text=" ".join(letras_corretas))
-
 
 def desenhar_boneco():
     # Desenhar partes do boneco com base no número de tentativas restantes
@@ -30,7 +27,6 @@ def desenhar_boneco():
         canvas.create_line(117, 140, 222, 180)
         # Criando o segundo linha do X da forca
         canvas.create_line(117, 180, 222, 140)
-
 
 def verificar_letra():
     global tentativas
@@ -65,7 +61,6 @@ def verificar_letra():
         resultado_label.config(
             text=f"Você perdeu! A palavra era: {palavra_secreta}")
         letra_entry.config(state=tk.DISABLED)
-
 
 # Inicializa o jogo
 palavra_secreta = escolher_palavra()
