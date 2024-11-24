@@ -1,16 +1,13 @@
 import tkinter as tk
 import random
 
-
 def escolher_palavra():
     palavras = ["MITS", "altair", "programacao", "etec", "tecnologia",
                 "computador", "Ridley", "Microsoft", "Apple", "informatica"]
     return random.choice(palavras).upper()
 
-
 def atualizar_palavra():
     palavra_label.config(text=" ".join(letras_corretas))
-
 
 def desenhar_boneco():
     # Desenhar partes do boneco com base no número de tentativas restantes
@@ -30,7 +27,6 @@ def desenhar_boneco():
         canvas.create_line(117, 140, 222, 180)
         # Criando o segundo linha do X da forca
         canvas.create_line(117, 180, 222, 140)
-
 
 def verificar_letra():
     global tentativas
@@ -68,8 +64,6 @@ def verificar_letra():
 
 # Esta linha define uma nova função chamada reiniciaJogo.
 # Esta função será chamada quando o botão "Jogar Novamente" for clicado.
-
-
 def reiniciaJogo():
     # Essa linha indica que as variáveis palavra_secreta, letras_corretas,
     # tentativas e letras_erradas serão usadas dentro da função reiniciaJogo,
@@ -106,7 +100,6 @@ def reiniciaJogo():
     # jogador insira novas letras.
     letra_entry.config(state=tk.NORMAL)
 
-
 # Inicializa o jogo
 palavra_secreta = escolher_palavra()
 letras_corretas = ["_" for _ in palavra_secreta]
@@ -124,7 +117,7 @@ altura_tela = root.winfo_screenheight()
 
 # Define as dimensões da janela
 largura_janela = 500
-altura_janela = 623
+altura_janela = 621
 
 # Calcula as coordenadas x e y para centralizar a janela
 pos_x = (largura_tela - largura_janela) // 2

@@ -1,0 +1,159 @@
+* {
+    margin: 0px;
+    /* Zerando as margens do navegador */
+    padding: 0px;
+    /* Zerando as margens de preenchimento internas do navegador */
+    box-sizing: border-box;
+    /* Colocando o conteiner inteiro com altura e largura max do navegador */
+}
+
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    /* Define a fonte do texto */
+    display: flex;
+    /* Usa flexbox para centralizar conteúdo */
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+    height: 100vh;
+    /* Altura total da viewport */
+    margin: 0;
+    /* Remove margens padrão */
+    background-color: #f0f0f0;
+    /* Cor de fundo cinza claro */
+}
+
+/* Estilo do container principal */
+.container {
+    text-align: center;
+    /* Centraliza texto */
+    padding: 20px;
+    /* Espaçamento interno */
+    background-color: rgb(250, 250, 250);
+    /* Fundo branco */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+}
+
+.lexend-bold {
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: xx-large;
+}
+
+/* Estilo do botão Jogar */
+.btn-jogar {
+    margin: 10px 0px 0px 0px;
+    /* Margem de distancia do botao para o texto */
+    padding: 15px 30px;
+    /* Espaçamento interno do botão */
+    background-color: #4CAF50;
+    /* Mudar a cor dps de definido */
+    /* Cor de fundo verde */
+    color: rgb(255, 255, 255);
+    /* Texto branco */
+    border: none;
+    /* Remove borda */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Cursor vira mãozinha ao passar por cima */
+    transition: background-color 0.3s;
+    /* Animação suave da cor de fundo */
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 15px;
+    /* Tamanho da fonte */
+}
+
+/* Efeito hover do botão */
+.btn-jogar:hover {
+    background-color: rgb(69, 160, 73);
+    /* Cor mais escura ao passar o mouse */
+}
+
+/* Estilo do modal (popup) */
+.modal {
+    display: none;
+    /* Começa invisível */
+    position: fixed;
+    /* Posição fixa na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Ocupa toda a largura */
+    height: 100%;
+    /* Ocupa toda a altura */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundo semi-transparente */
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background-color: white;
+    /* Fundo branco */
+    margin: 15% auto;
+    /* Margem superior e centralizado */
+    padding: 20px;
+    /* Espaçamento interno */
+    width: 80%;
+    /* Largura de 80% */
+    max-width: 500px;
+    /* Largura máxima */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    position: relative;
+    /* Para posicionar o botão de fechar */
+    justify-items: center;
+    /* Alinhar o botao ao centro do content */
+}
+
+/* Estilo do botão Jogar */
+.btn-baixar {
+    padding: 15px 30px;
+    /* Espaçamento interno do botão */
+    background-color: #4CAF50;
+    /* Mudar a cor dps de definido */
+    /* Cor de fundo verde */
+    color: rgb(255, 255, 255);
+    /* Texto branco */
+    border: none;
+    /* Remove borda */
+    border-radius: 5px;
+    /* Cantos arredondados */
+    cursor: pointer;
+    /* Cursor vira mãozinha ao passar por cima */
+    transition: background-color 0.3s;
+    /* Animação suave da cor de fundo */
+    font-family: "Lexend", Arial, Helvetica, sans-serif;
+    font-style: bold;
+    font-size: 15px;
+    /* Tamanho da fonte */
+    margin: 10px 0px 0px 0px;
+    /* Margem de distancia do botao para o texto */
+}
+
+.kanit-regular {
+    text-align: justify;
+    font-family: "Kanit", sans-serif;
+    font-size: medium;
+    font-style: normal;
+}
+
+/* Botão de fechar (X) */
+.close {
+    position: absolute;
+    /* Posicionamento absoluto */
+    right: 10px;
+    /* 10px da direita */
+    top: 5px;
+    /* 5px do topo */
+    font-size: 24px;
+    /* Tamanho da fonte */
+    cursor: pointer;
+    /* Cursor vira mãozinha */
+}
