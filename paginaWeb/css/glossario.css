@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend", sans-serif;
+    overflow-x: hidden;
+}
+
+#abaBtn {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: center;
+    padding: 0 15px;
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+}
+
+.btnHeader {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.btnHeader:hover {
+    transform: scale(1.1);
+    width: 200px;
+}
+
+#Menu {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    padding: 0 15px;
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.txtMenu {
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+}
+
+#Banner {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    padding: 0 15px;
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+.txtIntroducao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 35%;
+    margin-bottom: 23%;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 2px rgb(117, 59, 35);
+}
+
+.txtDesenvolvimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border-radius: 25px;
+    margin-bottom: 2%;
+    text-shadow: 4px 2px rgb(117, 59, 35);
+}
+
+.imgDicionario {
+    width: 500px;
+    height: 350px;
+}
+
+#Corpo {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px;
+    background-image: url('https://cdn.pixabay.com/photo/2017/10/21/16/39/dictionary-2875159_1280.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.titleCrp {
+    width: 300px;
+    height: 80px;
+    font-size: 25px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(194, 99, 62), rgb(165, 69, 56));
+    color: white;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btnPalavra {
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top, rgb(194, 99, 62), rgb(165, 69, 56));
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.btnPalavra:hover {
+    transform: scale(1.1);
+    width: 200px;
+}
+
+.Traducao {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    margin-bottom: 50%;
+    margin-left: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.btnPalavra:hover .Traducao {
+    visibility: visible;
+    opacity: 1;
+}
+
+#Footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
+    position: relative;
+    color: white;
+    border-top: 2px solid white;
+}

@@ -21,7 +21,7 @@ body {
     /* Altura total da viewport */
     margin: 0;
     /* Remove margens padrão */
-    background-color: rgb(60, 97, 177);
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
     /* Cor de fundo cinza claro */
 }
 
@@ -51,9 +51,8 @@ body {
     /* Margem de distancia do botao para o texto */
     padding: 15px 30px;
     /* Espaçamento interno do botão */
-    background-color: rgb(32, 44, 100);
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
     /* Mudar a cor dps de definido */
-    /* Cor de fundo verde */
     color: rgb(255, 255, 255);
     /* Texto branco */
     border: none;
@@ -72,8 +71,8 @@ body {
 
 /* Efeito hover do botão */
 .btn-jogar:hover {
-    background-color: rgb(60, 97, 177);
-    /* Cor mais escura ao passar o mouse */
+    background-image: linear-gradient(to top, rgb(205, 150, 75), rgb(180, 80, 70));
+    /* Cor mais clara ao passar o mouse */
 }
 
 /* Estilo do modal (popup) */
@@ -116,9 +115,7 @@ body {
 .btn-baixar {
     padding: 15px 30px;
     /* Espaçamento interno do botão */
-    background-color: rgb(32, 44, 100);
-    /* Mudar a cor dps de definido */
-    /* Cor de fundo verde */
+    background-image: linear-gradient(to top, rgb(194, 137, 62), rgb(165, 69, 56));
     color: rgb(255, 255, 255);
     /* Texto branco */
     border: none;
@@ -139,8 +136,8 @@ body {
 
 /* Efeito hover do botão */
 .btn-baixar:hover {
-    background-color: rgb(60, 97, 177);
-    /* Cor mais escura ao passar o mouse */
+    background-image: linear-gradient(to top, rgb(205, 150, 75), rgb(180, 80, 70));
+    /* Cor mais clara ao passar o mouse */
 }
 
 .kanit-regular {
